@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Adventure Map</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="main-header">
+        <div class="header-content">
+            <h1 class="site-title">Learning Adventure Map</h1>
+            <p class="site-subtitle">Begin Your Learning Journey</p>
+        </div>
+    </div>
+    
+    <div id="course-selector" class="screen active">
+        <h1>Choose Your Learning Path</h1>
+        <div class="course-buttons">
+            <button class="course-btn" data-course="webDevelopment">Web Development</button>
+            <button class="course-btn" data-course="dataScience">Data Science</button>
+            <button class="course-btn" data-course="cybersecurity">Cybersecurity</button>
+            <button class="course-btn" data-course="aiMl">AI & Machine Learning</button>
+        </div>
+    </div>
+
+    <div id="learning-map" class="screen">
+        <header>
+            <h1 id="course-title">Course Map</h1>
+            <button id="back-to-courses">Change Course</button>
+        </header>
+        <div class="map-container">
+            <div id="level-map"></div>
+        </div>
+    </div>
+
+    <div id="level-content" class="screen">
+        <header>
+            <h2 id="level-title"></h2>
+            <button id="back-to-map">Back to Map</button>
+        </header>
+        <div class="content-container">
+            <div id="study-material"></div>
+            <div id="progress-container">
+                <progress id="progress-bar" value="0" max="100"></progress>
+                <span id="progress-percentage">0%</span>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="game.js"></script>
+</html>

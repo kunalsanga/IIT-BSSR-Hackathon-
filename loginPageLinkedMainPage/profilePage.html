@@ -6,7 +6,26 @@
     <title>User Profile</title>
     <link rel="stylesheet" href="profilePage.css">
 </head>
-<script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script>
+    function goToMainPage1() {
+        window.location.href = "index.html"; // Change this to your main page URL
+    }
+    function goToMainPage2(){
+        window.location.href="job.html";
+    }
+   function goToMainPage3() {
+        window.location.href = "game.html"; // Change this to your main page URL
+    }
+    function goToMainPage4(){
+        window.location.href="video.html";
+    }
+   function goToMainPage5() {
+        window.location.href = "Explore"; // Change this to your main page URL
+    }
+    
+    </script>
+
 </head>
 <body>
     <header>
@@ -25,27 +44,41 @@
         </div>
     </header>
     <div class="container">
-        <aside>
+        <aside class="activity-bar">
             <nav>
                 <ul>
                     <li>
-                        <a href="#home">
+                        <a href="#home" onclick="goToMainPage1()">
                             <i class="fas fa-home"></i> Home
                         </a>
                     </li>
+                    
                     <li>
-                        <a href="#Jobs">
-                            <i class="fas fa-briefcase"></i> Jobs     
+                        <a href="#Jobs" onclick="goToMainPage2()"></a>
+                            <i class="fas fa-briefcase"></i> Jobs
                         </a>
                     </li>
+                    
+                    
                     <li>
-                        <a href="#explore">
-                            <i class="fas fa-compass"></i> Explore
-                        </a> 
-                    </li>
+                        <a href="#Gamified Learning" onclick="goToMainPage3()">
+                            <i class="fas fa-home"></i> Gamified Learning
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Video Summarizer" onclick="goToMainPage4()">
+                            <i class="fas fa-home"></i> Video Summarizer
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Explore" onclick="goToMainPage5()">
+                            <i class="fas fa-home"></i> Explore
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </aside>
+        
         
         <div class="profile-header">
             <img src="user-1 (1).png" alt="Profile Picture" class="profile-picture">

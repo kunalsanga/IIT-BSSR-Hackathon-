@@ -283,17 +283,17 @@ aside {
     align-items: flex-start;
 }
 
-aside nav ul li {
+/* aside nav ul li {
     margin-bottom: 20px;
     cursor: pointer;
-    color: #a0a0a0;
+   
     font-weight: 500;
     transition: color 0.2s ease;
-}
+} */
 
-aside nav ul li:hover {
+/* aside nav ul li:hover {
     color: #ffffff;
-}
+} */
 
 .header-right {
     display: flex;
@@ -434,4 +434,86 @@ header .user-menu {
 /* Disable body scroll when popup is open */
 body.popup-open {
     overflow: hidden;
+}
+aside nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0; /* Remove default margin */
+}
+
+aside nav ul li {
+    display: flex;
+    align-items: center;
+    transition: color 0.2s ease;
+    padding: 10px 0;
+}
+
+aside nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: #b0b0b0; /* Default color */
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adds spacing between the icon and text */
+    font-size: 18px;
+
+}
+.fas {
+    font-size: 20px;
+}
+
+.activity-bar nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #d1cbcb;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: color 0.3s ease;
+}
+.activity-bar nav ul li:hover {
+    
+    transform: translateX(5px); /* Optional: Slight movement */
+}
+.activity-bar {
+    width: 200px;
+    background-color: #1a1a1a; /* Dark background */
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.activity-bar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.activity-bar nav ul li {
+    padding: 10px;
+    margin: 10px 0;
+    transition: all 0.3s ease;
+}
+
+.activity-bar nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff; /* White text color */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.activity-bar nav ul li:hover {
+    transform: translateX(5px);
+}
+
+.activity-bar nav ul li a:hover {
+    color: #ff4500; /* Orange color on hover */
+}
+
+.activity-bar nav ul li i {
+    color: #ffffff; /* White color for icons */
+}
+
+.activity-bar nav ul li:hover i {
+    color: #ff4500; /* Orange color for icons on hover */
 }
