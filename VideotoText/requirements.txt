@@ -1,0 +1,10 @@
+streamlit
+yt-dlp
+SpeechRecognition
+pydub
+python-dotenv
+google-generativeai
+pocketsphinx
+flask
+flask-cors
+tenacity 
