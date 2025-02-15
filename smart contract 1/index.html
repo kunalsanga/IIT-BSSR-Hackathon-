@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ether Payment Dapp</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <button class="connectButton">Connect MetaMask</button>
+      <h2>Account: <span class="account"></span></h2>
+      <h2>Balance: <span class="balance"></span> ETH</h2>
+      <input type="text" class="recipient" placeholder="Recipient Address" />
+      <input type="text" class="amount" placeholder="Amount in ETH" />
+      <button class="sendButton">Send Ether</button>
+      <button class="depositButton">Deposit Ether</button>
+      <div id="successModal" class="modal">
+        <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <p>Payment Successful!</p>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html> 

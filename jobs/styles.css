@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.search-bar input, .search-bar select, .search-bar button {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.job-list {
+    margin-top: 20px;
+}
+
+.job-item {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.job-item:last-child {
+    border-bottom: none;
+}
+
+.job-details {
+    max-width: 70%;
+}
+
+.job-title {
+    font-size: 18px;
+    color: #0073b1;
+    margin: 0;
+}
+
+.company-name, .location, .skills, .posted {
+    font-size: 14px;
+    color: #555;
+}
+
+.apply-button {
+    background-color: #6c63ff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.apply-button:hover {
+    background-color: #5a54d1;
+}
+
+.company-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.promoted {
+    font-size: 12px;
+    color: #999;
+    margin-top: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    color: #555;
+}
+
+input, textarea, button {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+} 

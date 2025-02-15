@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reddit-like Interface</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Acadex</div>
+        <input type="text" placeholder="Search">
+        <div class="header-right">
+            <!-- Wallet Icon -->
+            <i class="fas fa-wallet wallet-icon" onclick="openSmartContractSite()"></i>
+            <div class="chatbot-icon" onclick="openChatbotSite()">💬</div>
+            <div class="user-menu">
+                <div class="online">
+                    <div> 
+                        <a href="http://127.0.0.1:5501/profilePage.html">
+                            <img src="user-1 (1).png" alt="User Profile" class="profile-pic" id="imgButton">
+                        </a>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <aside class="activity-bar">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#home">
+                            <i class="fas fa-home"></i> Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Jobs">
+                            <i class="fas fa-briefcase"></i> Jobs
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#explore">
+                            <i class="fas fa-compass"></i> Explore
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <div class="post">
+                <h2>AI in Business</h2>
+                <img src="01JH4PZ8XV0NQYPC00FRMN0C4E.webp" alt="AI in Business" class="post-image">
+                <p>Exploring the impact of AI in modern business practices.</p>
+            </div>
+            <div class="post">
+                <h2>Decentralized Finance</h2>
+                <img src="artificial-intelligence-in-business-1.png" alt="Decentralized Finance" class="post-image">
+                <p>An overview of DeFi and its potential to revolutionize finance.</p>
+            </div>
+            <div class="post">
+                <h2>DeFi Innovations</h2>
+                <img src="decentralized-finance-defi-5113835-3bd35e94d7414f9abd030bea7910b467.png" alt="DeFi Innovations" class="post-image">
+                <p>Innovations in decentralized finance and their implications.</p>
+            </div>
+            <div class="post">
+                <h2>Google Campus</h2>
+                <img src="defi5.png" alt="Google Campus" class="post-image">
+                <p>A look inside the innovative environment of Google Campus.</p>
+            </div>
+            <div class="post">
+                <h2>NVIDIA Success</h2>
+                <img src="google-campus-main-pic_559_070617104054.jpg" alt="NVIDIA Success" class="post-image">
+                <p>How NVIDIA became a leader in the tech industry.</p>
+            </div>
+            <div class="post">
+                <h2>AI Applications</h2>
+                <img src="nvidia-success-factors.jpg" alt="AI Applications" class="post-image">
+                <p>Various applications of AI across different sectors.</p>
+            </div>
+            <div class="post">
+                <h2>AI Applications</h2>
+                <img src="pasted image 0.png" alt="AI Applications" class="post-image">
+                <p>Various applications of AI across different sectors.</p>
+            </div>
+        </main>
+        <aside class="popular-communities">
+            <h3>Popular Communities</h3>
+            <ul>
+                <li>
+                    <img src="technology.jpg" alt="Icon 1" class="community-icon">
+                    Technology
+                    <span class="members">1,234,567 members</span>
+                </li>
+                <li>
+                    <img src="science.jpg" alt="Icon 2" class="community-icon">
+                    Science
+                    <span class="members">987,654 members</span>
+                </li>
+                <li>
+                    <img src="finance.jpg" alt="Icon 3" class="community-icon">
+                    Finance
+                    <span class="members">543,210 members</span>
+                </li>
+                <li>
+                    <img src="health.jpg" alt="Icon 4" class="community-icon">
+                    Health
+                    <span class="members">321,098 members</span>
+                </li>
+                <li>
+                    <img src="education.jpg" alt="Icon 5" class="community-icon">
+                    Education
+                    <span class="members">210,987 members</span>
+                </li>
+            </ul>
+        </aside>
+    </div>
+    <div id="chatWindow" class="chat-window">
+        <div class="chat-header">Chatbot</div>
+        <div class="chat-body">
+            <p>Hello! How can I assist you today?</p>
+        </div>
+        <div class="chat-footer">
+            <input type="text" placeholder="Type a message...">
+            <button>Send</button>
+        </div>
+    </div>
+    <script>
+        function openSmartContractSite() {
+            window.open('http://localhost:5173/', '_blank');
+        }
+
+        function openChatbotSite() {
+            window.open('http://localhost:3001/', '_blank');
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html> 
